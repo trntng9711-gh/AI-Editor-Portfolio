@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Của Tôi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-zinc-50 text-zinc-900 antialiased selection:bg-blue-200 selection:text-blue-900">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-zinc-200">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="font-bold text-xl tracking-tight text-zinc-900">Trần Ngọc <span
+                    class="text-blue-600">Tùng.</span></a>
+            <nav class="hidden md:flex gap-6 font-medium text-sm text-zinc-600">
+                <a href="#about" class="hover:text-blue-600 transition">Giới thiệu</a>
+                <a href="#projects" class="hover:text-blue-600 transition">Dự án</a>
+                <a href="#experience" class="hover:text-blue-600 transition">Kinh nghiệm</a>
+                <a href="#contact" class="hover:text-blue-600 transition">Liên hệ</a>
+            </nav>
+
+            <!-- Mobile Menu Button (Hamburger) -->
+            <button id="mobile-menu-btn" class="md:hidden text-zinc-600">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu Panel -->
+        <nav id="mobile-menu" class="hidden md:hidden bg-white border-b border-zinc-200 px-6 py-4">
+            <div class="flex flex-col gap-4 font-medium text-sm text-zinc-600">
+                <a href="#about" class="hover:text-blue-600 transition">Giới thiệu</a>
+                <a href="#projects" class="hover:text-blue-600 transition">Dự án</a>
+                <a href="#experience" class="hover:text-blue-600 transition">Kinh nghiệm</a>
+                <a href="#contact" class="hover:text-blue-600 transition">Liên hệ</a>
+                <a href="#contact"
+                    class="bg-zinc-900 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-zinc-800 transition text-center">Thuê
+                    tôi</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="about"
+        class="pt-32 pb-20 px-6 max-w-5xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
+        <div class="flex-1 text-center md:text-left">
+            <h2 class="text-blue-600 font-medium tracking-wide text-sm uppercase mb-3">Xin chào, tôi là</h2>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-zinc-900 mb-4">
+                Trần Ngọc Tùng
+            </h1>
+            <h3 class="text-xl md:text-2xl text-zinc-500 font-medium mb-6">
+                AI Editor
+            </h3>
+            <p class="text-zinc-600 leading-relaxed mb-8 max-w-lg mx-auto md:mx-0">
+                Tôi làm việc với các mô hình AI để tinh chỉnh, kiểm tra và cải thiện chất lượng nội dung do máy tính tạo
+                ra. Công việc của tôi tập trung vào việc đảm bảo sự tự nhiên, chính xác và phù hợp với ngữ cảnh của các
+                văn bản AI.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                <a href="#projects"
+                    class="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition flex items-center justify-center gap-2">
+                    Xem dự án
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                    </svg>
+                </a>
+                <a href="./images/cv_tranngoctung.pdf" download="CV_TranNgocTung.pdf"
+                    class="bg-white text-zinc-700 border border-zinc-300 px-6 py-3 rounded-lg font-medium hover:bg-zinc-50 transition flex items-center justify-center gap-2">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                    </svg>
+                    Tải CV PDF
+                </a>
+            </div>
+        </div>
+
+        <!-- Profile Image/Avatar Placeholder -->
+        <div class="relative w-48 h-48 md:w-72 md:h-72 shrink-0">
+            <!-- Vòng tròn trang trí -->
+            <div class="absolute inset-0 bg-blue-100 rounded-full blur-2xl transform scale-110 -z-10"></div>
+            <!-- Thay src bằng link ảnh thật của bạn -->
+            <img src="./images/2024_11_09_14_39_29_IMG_4536.JPG" alt="Ảnh chân dung"
+                class="w-full h-full object-cover rounded-full border-4 border-white shadow-xl">
+        </div>
+    </section>
+
+    <!-- Kỹ năng (Skills) -->
+    <section class="py-12 bg-white border-y border-zinc-200">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <p class="text-sm font-medium text-zinc-500 uppercase tracking-wider mb-6">Công cụ & Kỹ năng tôi sử dụng</p>
+            <div class="flex flex-wrap justify-center gap-3">
+                <span
+                    class="px-4 py-2 bg-zinc-100 text-zinc-700 rounded-full text-sm font-medium border border-zinc-200">CapCut</span>
+                <span
+                    class="px-4 py-2 bg-zinc-100 text-zinc-700 rounded-full text-sm font-medium border border-zinc-200">Adobe
+                    Premiere</span>
+                <span
+                    class="px-4 py-2 bg-zinc-100 text-zinc-700 rounded-full text-sm font-medium border border-zinc-200">Grok</span>
+                <span
+                    class="px-4 py-2 bg-zinc-100 text-zinc-700 rounded-full text-sm font-medium border border-zinc-200">ChatGPT</span>
+                <span
+                    class="px-4 py-2 bg-zinc-100 text-zinc-700 rounded-full text-sm font-medium border border-zinc-200">Gemini</span>
+                <span
+                    class="px-4 py-2 bg-zinc-100 text-zinc-700 rounded-full text-sm font-medium border border-zinc-200">Canva</span>
+                <span
+                    class="px-4 py-2 bg-zinc-100 text-zinc-700 rounded-full text-sm font-medium border border-zinc-200">Kling
+                    AI</span>
+                <span
+                    class="px-4 py-2 bg-zinc-100 text-zinc-700 rounded-full text-sm font-medium border border-zinc-200">Elevenlabs</span>
+                <span
+                    class="px-4 py-2 bg-zinc-100 text-zinc-700 rounded-full text-sm font-medium border border-zinc-200">Sora</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio / AI Video Projects -->
+    <section id="projects" class="py-20 max-w-6xl mx-auto overflow-hidden">
+        <div class="mb-14 px-6 md:px-8 text-center md:text-left">
+            <h2 class="text-3xl font-bold text-zinc-900 mb-4">Thư Viện Video AI</h2>
+            <p class="text-zinc-600 max-w-2xl mx-auto md:mx-0">Các dự án được phân loại theo 5 chủ đề. Bấm vào nút Play
+                trên mỗi thẻ để xem video gốc. Bạn có thể vuốt hoặc bấm nút mũi tên để cuộn ngang.</p>
+        </div>
+
+        <div class="space-y-16">
+
+            <!-- Row 1: Quảng Cáo & Thương Mại -->
+            <div class="px-6 md:px-8">
+                <div class="flex items-center justify-between mb-6">
+                    <h3 class="text-2xl font-bold text-zinc-900 flex items-center gap-3">
+                        <span
+                            class="w-10 h-10 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center text-lg">🏎</span>
+                        Cars
+                    </h3>
+                    <div class="hidden md:flex gap-2">
+                        <button class="p-2.5 rounded-full bg-zinc-200 hover:bg-zinc-300 text-zinc-700 transition"
+                            onclick="document.getElementById('slider-1').scrollBy({left: -300, behavior: 'smooth'})">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 19l-7-7 7-7"></path>
+                            </svg>
+                        </button>
+                        <button class="p-2.5 rounded-full bg-zinc-200 hover:bg-zinc-300 text-zinc-700 transition"
+                            onclick="document.getElementById('slider-1').scrollBy({left: 300, behavior: 'smooth'})">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="slider-1"
+                    class="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-6 hide-scrollbar scroll-smooth -mx-6 px-6 md:mx-0 md:px-0">
+                    <!-- Card 1 -->
+                    <div
+                        class="snap-start shrink-0 w-[65vw] sm:w-[260px] group flex flex-col bg-white rounded-2xl border border-zinc-200 overflow-hidden hover:shadow-xl hover:shadow-blue-900/5 hover:-translate-y-1 transition-all duration-300">
+                        <div class="relative aspect-[9/16] bg-zinc-900 overflow-hidden">
+                            <iframe
+                                src="https://player.vimeo.com/video/1184386469?badge=0&autopause=0&player_id=0&app_id=58479"
+                                class="absolute inset-0 w-full h-full" frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                                allowfullscreen title="Xe Hơi AI #4">
+                            </iframe>
+                        </div>
+                        <div class="p-4 flex-1 flex flex-col">
+                            <h4
+                                class="text-base font-bold text-zinc-900 mb-1 line-clamp-1 group-hover:text-blue-600 transition">
+                                Xe Hơi AI #4</h4>
+                            <p class="text-zinc-500 text-xs line-clamp-2 mb-3">Video xe hơi ấn tượng dựng hoàn toàn bằng
+                                trí tuệ nhân tạo.</p>
+                            <div class="flex flex-wrap gap-2 mt-auto">
+                                <span class="text-[10px] font-medium px-2 py-1 bg-sky-50 text-sky-600 rounded-md">Veo3
+                                    AI</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-indigo-50 text-indigo-600 rounded-md">Grok</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-emerald-50 text-emerald-600 rounded-md">ChatGPT</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-violet-50 text-violet-600 rounded-md">Gemini</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-rose-50 text-rose-600 rounded-md">CapCut</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div
+                        class="snap-start shrink-0 w-[65vw] sm:w-[260px] group flex flex-col bg-white rounded-2xl border border-zinc-200 overflow-hidden hover:shadow-xl hover:shadow-blue-900/5 hover:-translate-y-1 transition-all duration-300">
+                        <div class="relative aspect-[9/16] bg-zinc-900 overflow-hidden">
+                            <iframe
+                                src="https://player.vimeo.com/video/1184386347?badge=0&autopause=0&player_id=0&app_id=58479"
+                                class="absolute inset-0 w-full h-full" frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                                allowfullscreen title="Xe Hơi AI #5">
+                            </iframe>
+                        </div>
+                        <div class="p-4 flex-1 flex flex-col">
+                            <h4
+                                class="text-base font-bold text-zinc-900 mb-1 line-clamp-1 group-hover:text-blue-600 transition">
+                                Xe Hơi AI #5</h4>
+                            <p class="text-zinc-500 text-xs line-clamp-2 mb-3">Cảnh quay mượt mà xung quanh chiếc xe hơi
+                                sang trọng.</p>
+                            <div class="flex flex-wrap gap-2 mt-auto">
+                                <span class="text-[10px] font-medium px-2 py-1 bg-sky-50 text-sky-600 rounded-md">Veo3
+                                    AI</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-indigo-50 text-indigo-600 rounded-md">Grok</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-emerald-50 text-emerald-600 rounded-md">ChatGPT</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-violet-50 text-violet-600 rounded-md">Gemini</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-rose-50 text-rose-600 rounded-md">CapCut</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div
+                        class="snap-start shrink-0 w-[65vw] sm:w-[260px] group flex flex-col bg-white rounded-2xl border border-zinc-200 overflow-hidden hover:shadow-xl hover:shadow-blue-900/5 hover:-translate-y-1 transition-all duration-300">
+                        <div class="relative aspect-[9/16] bg-zinc-900 overflow-hidden">
+                            <iframe
+                                src="https://player.vimeo.com/video/1184386367?badge=0&autopause=0&player_id=0&app_id=58479"
+                                class="absolute inset-0 w-full h-full" frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                                allowfullscreen title="Xe Hơi AI #2">
+                            </iframe>
+                        </div>
+                        <div class="p-4 flex-1 flex flex-col">
+                            <h4
+                                class="text-base font-bold text-zinc-900 mb-1 line-clamp-1 group-hover:text-blue-600 transition">
+                                Xe Hơi AI #2</h4>
+                            <p class="text-zinc-500 text-xs line-clamp-2 mb-3">Xe hơi hiện đại, góc quay cinematic tạo
+                                bằng AI.</p>
+                            <div class="flex flex-wrap gap-2 mt-auto">
+                                <span class="text-[10px] font-medium px-2 py-1 bg-sky-50 text-sky-600 rounded-md">Veo3
+                                    AI</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-indigo-50 text-indigo-600 rounded-md">Grok</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-emerald-50 text-emerald-600 rounded-md">ChatGPT</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-violet-50 text-violet-600 rounded-md">Gemini</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-rose-50 text-rose-600 rounded-md">CapCut</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div
+                        class="snap-start shrink-0 w-[65vw] sm:w-[260px] group flex flex-col bg-white rounded-2xl border border-zinc-200 overflow-hidden hover:shadow-xl hover:shadow-blue-900/5 hover:-translate-y-1 transition-all duration-300">
+                        <div class="relative aspect-[9/16] bg-zinc-900 overflow-hidden">
+                            <iframe
+                                src="https://player.vimeo.com/video/1184386395?badge=0&autopause=0&player_id=0&app_id=58479"
+                                class="absolute inset-0 w-full h-full" frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                                allowfullscreen title="Xe Hơi AI #3">
+                            </iframe>
+                        </div>
+                        <div class="p-4 flex-1 flex flex-col">
+                            <h4
+                                class="text-base font-bold text-zinc-900 mb-1 line-clamp-1 group-hover:text-blue-600 transition">
+                                Xe Hơi AI #3</h4>
+                            <p class="text-zinc-500 text-xs line-clamp-2 mb-3">Cải tạo xe hơi cổ điển, phong cách
+                                Timelapse, nhịp độ cao.</p>
+                            <div class="flex flex-wrap gap-2 mt-auto">
+                                <span class="text-[10px] font-medium px-2 py-1 bg-sky-50 text-sky-600 rounded-md">Veo3
+                                    AI</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-indigo-50 text-indigo-600 rounded-md">Grok</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-emerald-50 text-emerald-600 rounded-md">ChatGPT</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-violet-50 text-violet-600 rounded-md">Gemini</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-rose-50 text-rose-600 rounded-md">CapCut</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div
+                        class="snap-start shrink-0 w-[65vw] sm:w-[260px] group flex flex-col bg-white rounded-2xl border border-zinc-200 overflow-hidden hover:shadow-xl hover:shadow-blue-900/5 hover:-translate-y-1 transition-all duration-300">
+                        <div class="relative aspect-[9/16] bg-zinc-900 overflow-hidden">
+                            <iframe
+                                src="https://player.vimeo.com/video/1184386418?badge=0&autopause=0&player_id=0&app_id=58479"
+                                class="absolute inset-0 w-full h-full" frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                                allowfullscreen title="Xe Hơi AI #1">
+                            </iframe>
+                        </div>
+                        <div class="p-4 flex-1 flex flex-col">
+                            <h4
+                                class="text-base font-bold text-zinc-900 mb-1 line-clamp-1 group-hover:text-blue-600 transition">
+                                Xe Hơi AI #1</h4>
+                            <p class="text-zinc-500 text-xs line-clamp-2 mb-3">Timelapse cảnh biến chiếc xe trong bãi
+                                phế liệu thành chiếc xe mới hoàn toàn.</p>
+                            <div class="flex flex-wrap gap-2 mt-auto">
+                                <span class="text-[10px] font-medium px-2 py-1 bg-sky-50 text-sky-600 rounded-md">Veo3
+                                    AI</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-indigo-50 text-indigo-600 rounded-md">Grok</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-emerald-50 text-emerald-600 rounded-md">ChatGPT</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-violet-50 text-violet-600 rounded-md">Gemini</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-rose-50 text-rose-600 rounded-md">CapCut</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 2: Phim Ngắn & Điện Ảnh -->
+            <div class="px-6 md:px-8">
+                <div class="flex items-center justify-between mb-6">
+                    <h3 class="text-2xl font-bold text-zinc-900 flex items-center gap-3">
+                        <span
+                            class="w-10 h-10 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center text-lg">✈</span>
+                        Máy Bay
+                    </h3>
+                    <div class="hidden md:flex gap-2">
+                        <button class="p-2.5 rounded-full bg-zinc-200 hover:bg-zinc-300 text-zinc-700 transition"
+                            onclick="document.getElementById('slider-2').scrollBy({left: -300, behavior: 'smooth'})">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 19l-7-7 7-7"></path>
+                            </svg>
+                        </button>
+                        <button class="p-2.5 rounded-full bg-zinc-200 hover:bg-zinc-300 text-zinc-700 transition"
+                            onclick="document.getElementById('slider-2').scrollBy({left: 300, behavior: 'smooth'})">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="slider-2"
+                    class="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-6 hide-scrollbar scroll-smooth -mx-6 px-6 md:mx-0 md:px-0">
+                    <!-- Card 1 -->
+                    <div
+                        class="snap-start shrink-0 w-[65vw] sm:w-[260px] group flex flex-col bg-white rounded-2xl border border-zinc-200 overflow-hidden hover:shadow-xl hover:shadow-blue-900/5 hover:-translate-y-1 transition-all duration-300">
+                        <div class="relative aspect-[9/16] bg-zinc-900 overflow-hidden">
+                            <iframe
+                                src="https://player.vimeo.com/video/1184394143?badge=0&autopause=0&player_id=0&app_id=58479"
+                                class="absolute inset-0 w-full h-full" frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                                allowfullscreen title="F-16 Fighting Falcon">
+                            </iframe>
+                        </div>
+                        <div class="p-4 flex-1 flex flex-col">
+                            <h4
+                                class="text-base font-bold text-zinc-900 mb-1 line-clamp-1 group-hover:text-blue-600 transition">
+                                F-16 Fighting Falcon</h4>
+                            <p class="text-zinc-500 text-xs line-clamp-2 mb-3">Chiến đấu cơ F-16 bay tốc độ cao, dựng
+                                bằng Sora AI cực kỳ chân thực.</p>
+                            <div class="flex flex-wrap gap-2 mt-auto">
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-orange-50 text-orange-600 rounded-md">Sora</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-indigo-50 text-indigo-600 rounded-md">Grok</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-rose-50 text-rose-600 rounded-md">CapCut</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div
+                        class="snap-start shrink-0 w-[65vw] sm:w-[260px] group flex flex-col bg-white rounded-2xl border border-zinc-200 overflow-hidden hover:shadow-xl hover:shadow-blue-900/5 hover:-translate-y-1 transition-all duration-300">
+                        <div class="relative aspect-[9/16] bg-zinc-900 overflow-hidden">
+                            <iframe
+                                src="https://player.vimeo.com/video/1184388143?badge=0&autopause=0&player_id=0&app_id=58479"
+                                class="absolute inset-0 w-full h-full" frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                                allowfullscreen title="Máy Bay Antonov">
+                            </iframe>
+                        </div>
+                        <div class="p-4 flex-1 flex flex-col">
+                            <h4
+                                class="text-base font-bold text-zinc-900 mb-1 line-clamp-1 group-hover:text-blue-600 transition">
+                                Máy Bay Antonov</h4>
+                            <p class="text-zinc-500 text-xs line-clamp-2 mb-3">Vận tải cơ hạng nặng Antonov tái hiện
+                                bằng công nghệ AI cực ấn tượng.</p>
+                            <div class="flex flex-wrap gap-2 mt-auto">
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-orange-50 text-orange-600 rounded-md">Sora</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-indigo-50 text-indigo-600 rounded-md">Grok</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-rose-50 text-rose-600 rounded-md">CapCut</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div
+                        class="snap-start shrink-0 w-[65vw] sm:w-[260px] group flex flex-col bg-white rounded-2xl border border-zinc-200 overflow-hidden hover:shadow-xl hover:shadow-blue-900/5 hover:-translate-y-1 transition-all duration-300">
+                        <div class="relative aspect-[9/16] bg-zinc-900 overflow-hidden">
+                            <iframe
+                                src="https://player.vimeo.com/video/1184394128?badge=0&autopause=0&player_id=0&app_id=58479"
+                                class="absolute inset-0 w-full h-full" frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                                allowfullscreen title="Vận Tải Cơ C-130">
+                            </iframe>
+                        </div>
+                        <div class="p-4 flex-1 flex flex-col">
+                            <h4
+                                class="text-base font-bold text-zinc-900 mb-1 line-clamp-1 group-hover:text-blue-600 transition">
+                                Vận Tải Cơ C-130</h4>
+                            <p class="text-zinc-500 text-xs line-clamp-2 mb-3">Hercules C-130 trong nhiệm vụ vận tải,
+                                hình ảnh AI chân thực mãn nhãn.</p>
+                            <div class="flex flex-wrap gap-2 mt-auto">
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-orange-50 text-orange-600 rounded-md">Sora</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-indigo-50 text-indigo-600 rounded-md">Grok</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-rose-50 text-rose-600 rounded-md">CapCut</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div
+                        class="snap-start shrink-0 w-[65vw] sm:w-[260px] group flex flex-col bg-white rounded-2xl border border-zinc-200 overflow-hidden hover:shadow-xl hover:shadow-blue-900/5 hover:-translate-y-1 transition-all duration-300">
+                        <div class="relative aspect-[9/16] bg-zinc-900 overflow-hidden">
+                            <iframe
+                                src="https://player.vimeo.com/video/1184390506?badge=0&autopause=0&player_id=0&app_id=58479"
+                                class="absolute inset-0 w-full h-full" frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                                allowfullscreen title="C-130 Hercules #2">
+                            </iframe>
+                        </div>
+                        <div class="p-4 flex-1 flex flex-col">
+                            <h4
+                                class="text-base font-bold text-zinc-900 mb-1 line-clamp-1 group-hover:text-blue-600 transition">
+                                C-130 Hercules #2</h4>
+                            <p class="text-zinc-500 text-xs line-clamp-2 mb-3">Góc nhìn thứ hai về C-130 với hiệu ứng
+                                ánh sáng và chuyển động AI mạnh mẽ.</p>
+                            <div class="flex flex-wrap gap-2 mt-auto">
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-orange-50 text-orange-600 rounded-md">Sora</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-indigo-50 text-indigo-600 rounded-md">Grok</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-rose-50 text-rose-600 rounded-md">CapCut</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div
+                        class="snap-start shrink-0 w-[65vw] sm:w-[260px] group flex flex-col bg-white rounded-2xl border border-zinc-200 overflow-hidden hover:shadow-xl hover:shadow-blue-900/5 hover:-translate-y-1 transition-all duration-300">
+                        <div class="relative aspect-[9/16] bg-zinc-900 overflow-hidden">
+                            <iframe
+                                src="https://player.vimeo.com/video/1184394156?badge=0&autopause=0&player_id=0&app_id=58479"
+                                class="absolute inset-0 w-full h-full" frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                                allowfullscreen title="F-16 Chiến Đấu">
+                            </iframe>
+                        </div>
+                        <div class="p-4 flex-1 flex flex-col">
+                            <h4
+                                class="text-base font-bold text-zinc-900 mb-1 line-clamp-1 group-hover:text-blue-600 transition">
+                                F-16 Chiến Đấu</h4>
+                            <p class="text-zinc-500 text-xs line-clamp-2 mb-3">F-16 cơ động tốc độ siêu âm, dựng toàn bộ
+                                bằng AI với độ chân thực cao.</p>
+                            <div class="flex flex-wrap gap-2 mt-auto">
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-orange-50 text-orange-600 rounded-md">Sora</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-indigo-50 text-indigo-600 rounded-md">Grok</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-rose-50 text-rose-600 rounded-md">CapCut</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 3: Sửa chữa -->
+            <div class="px-6 md:px-8">
+                <div class="flex items-center justify-between mb-6">
+                    <h3 class="text-2xl font-bold text-zinc-900 flex items-center gap-3">
+                        <span
+                            class="w-10 h-10 rounded-xl bg-pink-100 text-pink-600 flex items-center justify-center text-lg">🚧</span>
+                        Sửa Chữa Nhà Cửa
+                    </h3>
+                    <div class="hidden md:flex gap-2">
+                        <button class="p-2.5 rounded-full bg-zinc-200 hover:bg-zinc-300 text-zinc-700 transition"
+                            onclick="document.getElementById('slider-3').scrollBy({left: -300, behavior: 'smooth'})">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 19l-7-7 7-7"></path>
+                            </svg>
+                        </button>
+                        <button class="p-2.5 rounded-full bg-zinc-200 hover:bg-zinc-300 text-zinc-700 transition"
+                            onclick="document.getElementById('slider-3').scrollBy({left: 300, behavior: 'smooth'})">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="slider-3"
+                    class="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-6 hide-scrollbar scroll-smooth -mx-6 px-6 md:mx-0 md:px-0">
+                    <div
+                        class="snap-start shrink-0 w-[65vw] sm:w-[260px] group flex flex-col bg-white rounded-2xl border border-zinc-200 overflow-hidden hover:shadow-xl hover:shadow-blue-900/5 hover:-translate-y-1 transition-all duration-300">
+                        <div class="relative aspect-[9/16] bg-zinc-900 overflow-hidden">
+                            <iframe
+                                src="https://player.vimeo.com/video/1184382046?badge=0&autopause=0&player_id=0&app_id=58479"
+                                class="absolute inset-0 w-full h-full" frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                                allowfullscreen title="Kênh Đào #1">
+                            </iframe>
+                        </div>
+                        <div class="p-4 flex-1 flex flex-col">
+                            <h4
+                                class="text-base font-bold text-zinc-900 mb-1 line-clamp-1 group-hover:text-blue-600 transition">
+                                Kênh Đào #1</h4>
+                            <p class="text-zinc-500 text-xs line-clamp-2 mb-3">Dọn rác và làm đẹp kênh đào, trang trí
+                                lại đường phố ven kênh</p>
+                            <div class="flex flex-wrap gap-2 mt-auto">
+                                <span class="text-[10px] font-medium px-2 py-1 bg-sky-50 text-sky-600 rounded-md">Veo3
+                                    AI</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-rose-50 text-rose-600 rounded-md">CapCut</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-indigo-50 text-indigo-600 rounded-md">Grok</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-violet-50 text-violet-600 rounded-md">Gemini</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-emerald-50 text-emerald-600 rounded-md">ChatGPT</span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="snap-start shrink-0 w-[65vw] sm:w-[260px] group flex flex-col bg-white rounded-2xl border border-zinc-200 overflow-hidden hover:shadow-xl hover:shadow-blue-900/5 hover:-translate-y-1 transition-all duration-300">
+                        <div class="relative aspect-[9/16] bg-zinc-900 overflow-hidden">
+                            <iframe
+                                src="https://player.vimeo.com/video/1184382175?badge=0&autopause=0&player_id=0&app_id=58479"
+                                class="absolute inset-0 w-full h-full" frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                                allowfullscreen title="Sửa Nhà #4">
+                            </iframe>
+                        </div>
+                        <div class="p-4 flex-1 flex flex-col">
+                            <h4
+                                class="text-base font-bold text-zinc-900 mb-1 line-clamp-1 group-hover:text-blue-600 transition">
+                                Sửa Nhà #4</h4>
+                            <p class="text-zinc-500 text-xs line-clamp-2 mb-3">Cải tạo máy bay bỏ hoang thành căn nhà
+                                trong rừng.</p>
+                            <div class="flex flex-wrap gap-2 mt-auto">
+                                <span class="text-[10px] font-medium px-2 py-1 bg-sky-50 text-sky-600 rounded-md">Veo3
+                                    AI</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-rose-50 text-rose-600 rounded-md">CapCut</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-indigo-50 text-indigo-600 rounded-md">Grok</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-violet-50 text-violet-600 rounded-md">Gemini</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-emerald-50 text-emerald-600 rounded-md">ChatGPT</span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="snap-start shrink-0 w-[65vw] sm:w-[260px] group flex flex-col bg-white rounded-2xl border border-zinc-200 overflow-hidden hover:shadow-xl hover:shadow-blue-900/5 hover:-translate-y-1 transition-all duration-300">
+                        <div class="relative aspect-[9/16] bg-zinc-900 overflow-hidden">
+                            <iframe
+                                src="https://player.vimeo.com/video/1184382088?badge=0&autopause=0&player_id=0&app_id=58479"
+                                class="absolute inset-0 w-full h-full" frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                                allowfullscreen title="Sửa Nhà #8">
+                            </iframe>
+                        </div>
+                        <div class="p-4 flex-1 flex flex-col">
+                            <h4
+                                class="text-base font-bold text-zinc-900 mb-1 line-clamp-1 group-hover:text-blue-600 transition">
+                                Sửa Nhà #8</h4>
+                            <p class="text-zinc-500 text-xs line-clamp-2 mb-3">Cải tạo nội thất của lầu đài, phong cách
+                                cổ điển.</p>
+                            <div class="flex flex-wrap gap-2 mt-auto">
+                                <span class="text-[10px] font-medium px-2 py-1 bg-sky-50 text-sky-600 rounded-md">Veo3
+                                    AI</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-rose-50 text-rose-600 rounded-md">CapCut</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-indigo-50 text-indigo-600 rounded-md">Grok</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-violet-50 text-violet-600 rounded-md">Gemini</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-emerald-50 text-emerald-600 rounded-md">ChatGPT</span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="snap-start shrink-0 w-[65vw] sm:w-[260px] group flex flex-col bg-white rounded-2xl border border-zinc-200 overflow-hidden hover:shadow-xl hover:shadow-blue-900/5 hover:-translate-y-1 transition-all duration-300">
+                        <div class="relative aspect-[9/16] bg-zinc-900 overflow-hidden">
+                            <iframe
+                                src="https://player.vimeo.com/video/1184382118?badge=0&autopause=0&player_id=0&app_id=58479"
+                                class="absolute inset-0 w-full h-full" frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                                allowfullscreen title="Sửa Nhà #5">
+                            </iframe>
+                        </div>
+                        <div class="p-4 flex-1 flex flex-col">
+                            <h4
+                                class="text-base font-bold text-zinc-900 mb-1 line-clamp-1 group-hover:text-blue-600 transition">
+                                Sửa Nhà #5</h4>
+                            <p class="text-zinc-500 text-xs line-clamp-2 mb-3">Dựng lại căn nhà gỗ ven sông sau khi bị
+                                cây đổ sập.</p>
+                            <div class="flex flex-wrap gap-2 mt-auto">
+                                <span class="text-[10px] font-medium px-2 py-1 bg-sky-50 text-sky-600 rounded-md">Veo3
+                                    AI</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-rose-50 text-rose-600 rounded-md">CapCut</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-indigo-50 text-indigo-600 rounded-md">Grok</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-violet-50 text-violet-600 rounded-md">Gemini</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-emerald-50 text-emerald-600 rounded-md">ChatGPT</span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="snap-start shrink-0 w-[65vw] sm:w-[260px] group flex flex-col bg-white rounded-2xl border border-zinc-200 overflow-hidden hover:shadow-xl hover:shadow-blue-900/5 hover:-translate-y-1 transition-all duration-300">
+                        <div class="relative aspect-[9/16] bg-zinc-900 overflow-hidden">
+                            <iframe
+                                src="https://player.vimeo.com/video/1184382061?badge=0&autopause=0&player_id=0&app_id=58479"
+                                class="absolute inset-0 w-full h-full" frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                                allowfullscreen title="Sửa Nhà #1">
+                            </iframe>
+                        </div>
+                        <div class="p-4 flex-1 flex flex-col">
+                            <h4
+                                class="text-base font-bold text-zinc-900 mb-1 line-clamp-1 group-hover:text-blue-600 transition">
+                                Sửa Nhà #1</h4>
+                            <p class="text-zinc-500 text-xs line-clamp-2 mb-3">Timelapse sửa ngoại thất căn nhà gỗ,
+                                phong cách kiểu Mỹ.</p>
+                            <div class="flex flex-wrap gap-2 mt-auto">
+                                <span class="text-[10px] font-medium px-2 py-1 bg-sky-50 text-sky-600 rounded-md">Veo3
+                                    AI</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-rose-50 text-rose-600 rounded-md">CapCut</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-indigo-50 text-indigo-600 rounded-md">Grok</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-violet-50 text-violet-600 rounded-md">Gemini</span>
+                                <span
+                                    class="text-[10px] font-medium px-2 py-1 bg-emerald-50 text-emerald-600 rounded-md">ChatGPT</span>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Row 4: Thuyền Trên Sóng -->
+        <div class="px-6 md:px-8">
+            <div class="flex items-center justify-between mb-6">
+                <h3 class="text-2xl font-bold text-zinc-900 flex items-center gap-3">
+                    <span
+                        class="w-10 h-10 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center text-lg">🚢</span>
+                    Thuyền Trên Sóng
+                </h3>
+                <div class="hidden md:flex gap-2">
+                    <button class="p-2.5 rounded-full bg-zinc-200 hover:bg-zinc-300 text-zinc-700 transition"
+                        onclick="document.getElementById('slider-4').scrollBy({left: -300, behavior: 'smooth'})">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <button class="p-2.5 rounded-full bg-zinc-200 hover:bg-zinc-300 text-zinc-700 transition"
+                        onclick="document.getElementById('slider-4').scrollBy({left: 300, behavior: 'smooth'})">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div id="slider-4"
+                class="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-6 hide-scrollbar scroll-smooth -mx-6 px-6 md:mx-0 md:px-0">
+                <div
+                    class="snap-start shrink-0 w-[65vw] sm:w-[260px] group flex flex-col bg-white rounded-2xl border border-zinc-200 overflow-hidden hover:shadow-xl hover:shadow-blue-900/5 hover:-translate-y-1 transition-all duration-300">
+                    <div class="relative aspect-[9/16] bg-zinc-900 overflow-hidden">
+                        <iframe
+                            src="https://player.vimeo.com/video/1184390814?badge=0&autopause=0&player_id=0&app_id=58479"
+                            class="absolute inset-0 w-full h-full" frameborder="0"
+                            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                            allowfullscreen title="Thuyền Trên Sóng #4">
+                        </iframe>
+                    </div>
+                    <div class="p-4 flex-1 flex flex-col">
+                        <h4
+                            class="text-base font-bold text-zinc-900 mb-1 line-clamp-1 group-hover:text-blue-600 transition">
+                            Thuyền Trên Sóng #4</h4>
+                        <p class="text-zinc-500 text-xs line-clamp-2 mb-3">Cảnh tàu thủy lênh đênh trên sóng biển,
+                            dựng hoàn toàn bằng AI.</p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="text-[10px] font-medium px-2 py-1 bg-orange-50 text-orange-600 rounded-md">Sora
+                                AI</span>
+                            <span
+                                class="text-[10px] font-medium px-2 py-1 bg-rose-50 text-rose-600 rounded-md">CapCut</span>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="snap-start shrink-0 w-[65vw] sm:w-[260px] group flex flex-col bg-white rounded-2xl border border-zinc-200 overflow-hidden hover:shadow-xl hover:shadow-blue-900/5 hover:-translate-y-1 transition-all duration-300">
+                    <div class="relative aspect-[9/16] bg-zinc-900 overflow-hidden">
+                        <iframe
+                            src="https://player.vimeo.com/video/1184390669?badge=0&autopause=0&player_id=0&app_id=58479"
+                            class="absolute inset-0 w-full h-full" frameborder="0"
+                            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                            allowfullscreen title="Thuyền Trên Sóng #3">
+                        </iframe>
+                    </div>
+                    <div class="p-4 flex-1 flex flex-col">
+                        <h4
+                            class="text-base font-bold text-zinc-900 mb-1 line-clamp-1 group-hover:text-blue-600 transition">
+                            Thuyền Trên Sóng #3</h4>
+                        <p class="text-zinc-500 text-xs line-clamp-2 mb-3">Cảnh tàu thủy lênh đênh trên sóng biển,
+                            dựng hoàn toàn bằng AI.</p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="text-[10px] font-medium px-2 py-1 bg-orange-50 text-orange-600 rounded-md">Sora
+                                AI</span>
+                            <span
+                                class="text-[10px] font-medium px-2 py-1 bg-rose-50 text-rose-600 rounded-md">CapCut</span>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="snap-start shrink-0 w-[65vw] sm:w-[260px] group flex flex-col bg-white rounded-2xl border border-zinc-200 overflow-hidden hover:shadow-xl hover:shadow-blue-900/5 hover:-translate-y-1 transition-all duration-300">
+                    <div class="relative aspect-[9/16] bg-zinc-900 overflow-hidden">
+                        <iframe
+                            src="https://player.vimeo.com/video/1184390641?badge=0&autopause=0&player_id=0&app_id=58479"
+                            class="absolute inset-0 w-full h-full" frameborder="0"
+                            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                            allowfullscreen title="Thuyền Trên Sóng #2">
+                        </iframe>
+                    </div>
+                    <div class="p-4 flex-1 flex flex-col">
+                        <h4
+                            class="text-base font-bold text-zinc-900 mb-1 line-clamp-1 group-hover:text-blue-600 transition">
+                            Thuyền Trên Sóng #2</h4>
+                        <p class="text-zinc-500 text-xs line-clamp-2 mb-3">Cảnh tàu thủy lênh đênh trên sóng biển,
+                            dựng hoàn toàn bằng AI.</p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="text-[10px] font-medium px-2 py-1 bg-orange-50 text-orange-600 rounded-md">Sora
+                                AI</span>
+                            <span
+                                class="text-[10px] font-medium px-2 py-1 bg-rose-50 text-rose-600 rounded-md">CapCut</span>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="snap-start shrink-0 w-[65vw] sm:w-[260px] group flex flex-col bg-white rounded-2xl border border-zinc-200 overflow-hidden hover:shadow-xl hover:shadow-blue-900/5 hover:-translate-y-1 transition-all duration-300">
+                    <div class="relative aspect-[9/16] bg-zinc-900 overflow-hidden">
+                        <iframe
+                            src="https://player.vimeo.com/video/1184390603?badge=0&autopause=0&player_id=0&app_id=58479"
+                            class="absolute inset-0 w-full h-full" frameborder="0"
+                            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                            allowfullscreen title="Thuyền Trên Sóng #1">
+                        </iframe>
+                    </div>
+                    <div class="p-4 flex-1 flex flex-col">
+                        <h4
+                            class="text-base font-bold text-zinc-900 mb-1 line-clamp-1 group-hover:text-blue-600 transition">
+                            Thuyền Trên Sóng #1</h4>
+                        <p class="text-zinc-500 text-xs line-clamp-2 mb-3">Mở đầu series thuyền với hiệu ứng sóng
+                            nước AI đẹp mắt ấn tượng.</p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="text-[10px] font-medium px-2 py-1 bg-orange-50 text-orange-600 rounded-md">Sora
+                                AI</span>
+                            <span
+                                class="text-[10px] font-medium px-2 py-1 bg-rose-50 text-rose-600 rounded-md">CapCut</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 5: Social Media Shorts (Khung Dọc) -->
+        <div class="px-6 md:px-8">
+            <div class="flex items-center justify-between mb-6">
+                <h3 class="text-2xl font-bold text-zinc-900 flex items-center gap-3">
+                    <span
+                        class="w-10 h-10 rounded-xl bg-teal-100 text-teal-600 flex items-center justify-center text-lg">📱</span>
+                    TikTok / Shorts (Video Dọc)
+                </h3>
+                <div class="hidden md:flex gap-2">
+                    <button class="p-2.5 rounded-full bg-zinc-200 hover:bg-zinc-300 text-zinc-700 transition"
+                        onclick="document.getElementById('slider-5').scrollBy({left: -300, behavior: 'smooth'})">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <button class="p-2.5 rounded-full bg-zinc-200 hover:bg-zinc-300 text-zinc-700 transition"
+                        onclick="document.getElementById('slider-5').scrollBy({left: 300, behavior: 'smooth'})">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div id="slider-5"
+                class="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-6 hide-scrollbar scroll-smooth -mx-6 px-6 md:mx-0 md:px-0">
+                <!-- Card Dọc 1 -->
+                <div
+                    class="snap-start shrink-0 w-[65vw] sm:w-[260px] group flex flex-col bg-white rounded-2xl border border-zinc-200 overflow-hidden hover:shadow-xl hover:shadow-blue-900/5 hover:-translate-y-1 transition-all duration-300">
+                    <div class="relative aspect-[9/16] bg-zinc-900 overflow-hidden">
+                        <iframe
+                            src="https://player.vimeo.com/video/1184386175?badge=0&autopause=0&player_id=0&app_id=58479"
+                            class="absolute inset-0 w-full h-full" frameborder="0"
+                            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                            allowfullscreen title="Đan Lá #1">
+                        </iframe>
+                    </div>
+                    <div class="p-4 flex-1 flex flex-col">
+                        <h4
+                            class="text-base font-bold text-zinc-900 mb-1 line-clamp-1 group-hover:text-blue-600 transition">
+                            Đan Lá #1</h4>
+                        <p class="text-zinc-500 text-xs line-clamp-2 mb-3">Video ngắn sáng tạo với hình ảnh AI độc
+                            đáo, viral trên mạng xã hội.</p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="text-[10px] font-medium px-2 py-1 bg-sky-50 text-sky-600 rounded-md">Veo3
+                                AI</span>
+                            <span
+                                class="text-[10px] font-medium px-2 py-1 bg-rose-50 text-rose-600 rounded-md">CapCut</span>
+                            <span
+                                class="text-[10px] font-medium px-2 py-1 bg-indigo-50 text-indigo-600 rounded-md">Grok</span>
+                            <span
+                                class="text-[10px] font-medium px-2 py-1 bg-violet-50 text-violet-600 rounded-md">Gemini</span>
+                            <span
+                                class="text-[10px] font-medium px-2 py-1 bg-emerald-50 text-emerald-600 rounded-md">ChatGPT</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Dọc 2 -->
+                <div
+                    class="snap-start shrink-0 w-[65vw] sm:w-[260px] group flex flex-col bg-white rounded-2xl border border-zinc-200 overflow-hidden hover:shadow-xl hover:shadow-blue-900/5 hover:-translate-y-1 transition-all duration-300">
+                    <div class="relative aspect-[9/16] bg-zinc-900 overflow-hidden">
+                        <iframe
+                            src="https://player.vimeo.com/video/1184382558?badge=0&autopause=0&player_id=0&app_id=58479"
+                            class="absolute inset-0 w-full h-full" frameborder="0"
+                            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                            allowfullscreen title="Camera #1">
+                        </iframe>
+                    </div>
+                    <div class="p-4 flex-1 flex flex-col">
+                        <h4
+                            class="text-base font-bold text-zinc-900 mb-1 line-clamp-1 group-hover:text-blue-600 transition">
+                            Camera #1</h4>
+                        <p class="text-zinc-500 text-xs line-clamp-2 mb-3">Clip ngắn hấp dẫn với hình ảnh AI chân
+                            thực, phù hợp TikTok & Shorts.</p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="text-[10px] font-medium px-2 py-1 bg-orange-50 text-orange-600 rounded-md">Sora
+                                AI</span>
+                            <span
+                                class="text-[10px] font-medium px-2 py-1 bg-rose-50 text-rose-600 rounded-md">CapCut</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Dọc 3 -->
+                <div
+                    class="snap-start shrink-0 w-[65vw] sm:w-[260px] group flex flex-col bg-white rounded-2xl border border-zinc-200 overflow-hidden hover:shadow-xl hover:shadow-blue-900/5 hover:-translate-y-1 transition-all duration-300">
+                    <div class="relative aspect-[9/16] bg-zinc-900 overflow-hidden">
+                        <iframe
+                            src="https://player.vimeo.com/video/1184382580?badge=0&autopause=0&player_id=0&app_id=58479"
+                            class="absolute inset-0 w-full h-full" frameborder="0"
+                            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                            allowfullscreen title="Sóc #1">
+                        </iframe>
+                    </div>
+                    <div class="p-4 flex-1 flex flex-col">
+                        <h4
+                            class="text-base font-bold text-zinc-900 mb-1 line-clamp-1 group-hover:text-blue-600 transition">
+                            Sóc #1</h4>
+                        <p class="text-zinc-500 text-xs line-clamp-2 mb-3">Video AI ngắn thu hút nhiều lượt xem trên
+                            TikTok và mạng xã hội.</p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="text-[10px] font-medium px-2 py-1 bg-orange-50 text-orange-600 rounded-md">Sora
+                                AI</span>
+                            <span
+                                class="text-[10px] font-medium px-2 py-1 bg-rose-50 text-rose-600 rounded-md">CapCut</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Dọc 4 -->
+                <div
+                    class="snap-start shrink-0 w-[65vw] sm:w-[260px] group flex flex-col bg-white rounded-2xl border border-zinc-200 overflow-hidden hover:shadow-xl hover:shadow-blue-900/5 hover:-translate-y-1 transition-all duration-300">
+                    <div class="relative aspect-[9/16] bg-zinc-900 overflow-hidden">
+                        <iframe
+                            src="https://player.vimeo.com/video/1184382572?badge=0&autopause=0&player_id=0&app_id=58479"
+                            class="absolute inset-0 w-full h-full" frameborder="0"
+                            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                            allowfullscreen title="Hải Cẩu #1">
+                        </iframe>
+                    </div>
+                    <div class="p-4 flex-1 flex flex-col">
+                        <h4
+                            class="text-base font-bold text-zinc-900 mb-1 line-clamp-1 group-hover:text-blue-600 transition">
+                            Hải Cẩu #1</h4>
+                        <p class="text-zinc-500 text-xs line-clamp-2 mb-3">Clip AI viral phong cách sáng tạo dành
+                            cho TikTok & YouTube Shorts.</p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="text-[10px] font-medium px-2 py-1 bg-blue-50 text-blue-600 rounded-md">Kling
+                                AI</span>
+                            <span
+                                class="text-[10px] font-medium px-2 py-1 bg-rose-50 text-rose-600 rounded-md">CapCut</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <!-- Kinh nghiệm làm việc (Experience) -->
+    <section id="experience" class="py-20 px-6 max-w-5xl mx-auto border-t border-zinc-200">
+        <h2 class="text-3xl font-bold text-zinc-900 mb-12 text-center md:text-left">Kinh nghiệm làm việc</h2>
+
+        <div class="relative border-l border-zinc-200 ml-3 md:ml-4 space-y-12">
+            <!-- Job 1 -->
+            <div class="relative pl-8 md:pl-0">
+                <div
+                    class="hidden md:block absolute w-3 h-3 bg-blue-600 rounded-full -left-[6.5px] top-1.5 ring-4 ring-white">
+                </div>
+                <!-- Mobile dot -->
+                <div
+                    class="md:hidden absolute w-3 h-3 bg-blue-600 rounded-full -left-[6.5px] top-1.5 ring-4 ring-zinc-50">
+                </div>
+
+                <div class="md:grid md:grid-cols-4 md:gap-8 items-start">
+                    <div class="md:col-span-1 mb-2 md:mb-0 md:text-right pt-1">
+                        <span class="text-sm font-medium text-zinc-500">2020 - Hiện tại</span>
+                    </div>
+                    <div class="md:col-span-3 bg-white p-6 rounded-2xl border border-zinc-100 shadow-sm">
+                        <h3 class="text-lg font-bold text-zinc-900">Nhân viên Digital Marketing & Video Editor AI
+                        </h3>
+                        <p class="text-blue-600 font-medium mb-4 text-sm">Kinh doanh online gia đình</p>
+                        <ul class="list-disc list-inside text-zinc-600 space-y-2 text-sm leading-relaxed">
+                            <li>Thiết lập, theo dõi và tối ưu các chiến dịch Facebook Ads cho sản phẩm bán lẻ online.
+                            </li>
+                            <li>Vận hành gian hàng trên các kênh TikTok Shop, Shopee và Facebook.</li>
+                            <li>Biên tập video cho các nền tảng như TikTok, Reels, Shorts theo định dạng ngắn, dễ
+                                chuyển đổi.</li>
+                            <li>Sử dụng AI để tạo nội dung, hình ảnh, video và tối ưu hóa quy trình sáng tạo.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Job 2 -->
+            <div class="relative pl-8 md:pl-0">
+                <div
+                    class="hidden md:block absolute w-3 h-3 bg-zinc-300 rounded-full -left-[6.5px] top-1.5 ring-4 ring-white">
+                </div>
+                <div
+                    class="md:hidden absolute w-3 h-3 bg-zinc-300 rounded-full -left-[6.5px] top-1.5 ring-4 ring-zinc-50">
+                </div>
+
+                <div class="md:grid md:grid-cols-4 md:gap-8 items-start">
+                    <div class="md:col-span-1 mb-2 md:mb-0 md:text-right pt-1">
+                        <span class="text-sm font-medium text-zinc-500">2019 - 2020</span>
+                    </div>
+                    <div class="md:col-span-3 bg-white p-6 rounded-2xl border border-zinc-100 shadow-sm">
+                        <h3 class="text-lg font-bold text-zinc-900">Fontend Developer</h3>
+                        <p class="text-zinc-500 font-medium mb-4 text-sm">Freelance / Self-employed</p>
+                        <ul class="list-disc list-inside text-zinc-600 space-y-2 text-sm leading-relaxed">
+                            <li>Xây dựng website và landing page cho các doanh nghiệp vừa và nhỏ.</li>
+                            <li>Tối ưu hóa SEO On-page và tốc độ tải trang.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Liên hệ (Contact) -->
+    <section id="contact" class="py-24 bg-zinc-900 text-white">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Bạn có dự án thú vị?</h2>
+            <p class="text-zinc-400 mb-10 text-lg">Tôi luôn mở cửa đón nhận những cơ hội công việc và dự án freelance
+                mới.</p>
+
+            <div class="flex flex-col items-center gap-4">
+                <a href="https://zalo.me/0326223711" target="_blank" rel="noopener noreferrer"
+                    class="flex items-center gap-4 w-full max-w-sm bg-zinc-800 hover:bg-zinc-700 transition rounded-xl px-5 py-4">
+                    <img src="./images/icons8-zalo-50.png" class="w-8 h-8 shrink-0" alt="Zalo">
+                    <div class="text-left">
+                        <p class="text-xs text-zinc-500 uppercase tracking-wider">Zalo</p>
+                        <p class="text-white font-medium">0326 223 711</p>
+                    </div>
+                </a>
+                <a href="https://facebook.com/tran.97tung/" target="_blank" rel="noopener noreferrer"
+                    class="flex items-center gap-4 w-full max-w-sm bg-zinc-800 hover:bg-zinc-700 transition rounded-xl px-5 py-4">
+                    <svg class="w-8 h-8 shrink-0 text-[#1877F2]" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                    </svg>
+                    <div class="text-left">
+                        <p class="text-xs text-zinc-500 uppercase tracking-wider">Facebook</p>
+                        <p class="text-white font-medium">facebook.com/tran.97tung</p>
+                    </div>
+                </a>
+                <a href="mailto:trantung9711@gmail.com"
+                    class="flex items-center gap-4 w-full max-w-sm bg-zinc-800 hover:bg-zinc-700 transition rounded-xl px-5 py-4">
+                    <svg class="w-8 h-8 shrink-0 text-zinc-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                    <div class="text-left">
+                        <p class="text-xs text-zinc-500 uppercase tracking-wider">Email</p>
+                        <p class="text-white font-medium">trantung9711@gmail.com</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-zinc-950 text-zinc-500 py-8 text-center text-sm border-t border-zinc-800">
+        <div class="max-w-5xl mx-auto px-6">
+            <p>&copy; 2026 Trần Ngọc Tùng. Thiết kế với sự tối giản.</p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
